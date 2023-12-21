@@ -1,0 +1,32 @@
+#create matrices A and B
+A<-matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,ncol=3)
+B<-matrix(c(10,11,12,13,14,15,16,17,18),nrow=3,ncol=3)
+print(A)
+print(B)
+
+#display matrices A and B
+cat("matix A :\n","A","\n\n")
+cat("matix B :\n","B","\n\n")
+print(A)
+print(B)
+
+#transpose of matrices
+cat("transpose of matrix A:\n",t(A),"\n\n")
+cat("transpose of matrix B:\n",t(B),"\n\n")
+print(t(A))
+print(t(B))
+
+#additional of matrices
+additional_result<-A+B
+cat("matrix addition(A+B:\n",additional_result,"\n\n")
+print((A+B))
+
+#substraction of matrices
+substraction_result<- A-B
+cat("matrix substraction(A-B):\n",substraction_result,"\n\n")
+print((A-B))
+
+#multiplication of matrices
+multiplication_result<-A%*%B
+cat("matrix multiplication(A*B):\n",multiplication_result,"\n\n")
+print((A%*%B))
