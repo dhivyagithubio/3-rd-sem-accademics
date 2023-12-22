@@ -1,0 +1,14 @@
+#column binding c bind()
+#create two numeric vector
+vector1<-c(1,2,3)
+vector2<-c(4,5,6)
+# combine vector into a matrix by column binding
+column_matrix<-cbind(vector1,vector2)
+print(column_matrix)
+#row binding c bind()
+#create two numeric vector
+vector3<-c(7,8,9)
+vector4<-c(10,11,12)
+#combine vector into a matrix by row binding
+row_matrix<-rbind(vector3,vector4)
+print(row_matrix)
