@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_SIZE 100
+
+// Stack structure
+struct Stack {
+    int items[MAX_SIZE];
+    int top;
+};
+
+// Function to initialize the stack
+void initializeStack(struct Stack* stack) {
+    stack->top = -1;
+}
+
+// Function to check if the stack is empty
+int isEmpty(struct Stack* stack) {
+    return stack->top == -1;
+}
+
+// Function to check if the stack is full
+int isFull(struct Stack* stack) {
+    return stack->top == MAX_SIZE - 1;
+}
+
+// Function to push an item onto the stack
+void push(struct Stack* stack, int item) {
+    if (isFull(stack)) {
+        printf("Stack overflow. Cannot push more items.\n");
+        return;
+    }
+
+    stack->items[++stack->top] = item;
+}
+
+// Function to pop an item from the stack
+int pop(struct Stack* stack) {
+    if (isEmpty(stack)) {
+        printf("Stack underflow. Cannot pop from an empty stack.\n");
+        return -1; // Returning an invalid value for simplicity
+    }
+
+    return stack->items[stack->top--];
+}
+
+// Function to simulate undo using a stack
+void undo(struct Stack* undoStack) {
+    int lastAction = pop(undoStack);
+    if (lastAction != -1) {
+        printf("Undoing action: %d\n", lastAction);
+        // Apply inverse operation based on the lastAction
+    }
+}
+
+// Function to simulate a user typing and pushing an action onto the stack
+void typeCharacter(struct Stack* undoStack, char character) {
+    printf("Typing character: %c\n", character);
+    push(undoStack, character);
+}
+
+int main() {
+    // Initialize the undo stack
+    struct Stack undoStack;
+    initializeStack(&undoStack);
+
+    // Simulate user actions
+    typeCharacter(&undoStack, 'H');
+    typeCharacter(&undoStack, 'e');
+    typeCharacter(&undoStack, 'l');
+    typeCharacter(&undoStack, 'l');
+    typeCharacter(&undoStack, 'o');
+
+    // Simulate undo
+    undo(&undoStack); // Undoing 'o'
+    undo(&undoStack); // Undoing 'l'
+    undo(&undoStack); // Undoing 'l'
+    undo(&undoStack); // Undoing 'e'
+    undo(&undoStack); // Undoing 'H'
+    undo(&undoStack); // Trying to undo when the stack is empty
+
+    return 0;
+}
