@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    // Initialize the loop control variable
+    int num = 1;
+
+    // Using a while loop to calculate and print the squares
+    while (num <= 5) {
+        int square = num * num;
+        printf("The square of %d is: %d\n", num, square);
+
+        // Increment the loop control variable
+        num++;
+    }
+
+    // Return 0 to indicate successful execution
+    return 0;
+}
