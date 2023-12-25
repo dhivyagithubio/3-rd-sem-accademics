@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+void padd(int start A;int finish A;int start B;int finish B;int*start D;int*finish D)
+{
+    float coefficient;
+    *start D=avail;
+    while(start A<=finish A&&start B<=finish B)
+    {
+        switch(compare(terms[start A].expon,terms[start B].expon))
+        {
+            case 1:attach(terms[start A].coef,terms[start A]expon);
+            start A++;
+            break;
+            case -1:attach(terms[start A].coef,terms[start B].expon);
+            start B++;
+            break;
+            case 0:coefficient.terms[start A].coef term[start B]).coef;
+            attach(coefficient,terms[start A].expon);
+            start A ++;
+            start B ++;
+            break;
+            for(;start A <=finish A;start A++)
+            attach(terms[start A].coef,terms[start B].expon);
+            for(;start B<=finish B;start B++)
+            attach(terms[start B].coef,terms[start B].expon);
+            *finish D=avail-1;
+        }
+        void attach(float coefficient,int expon)
+        {
+            if(avail>=MAX_TERAMS)
+            {
+                printf("can not attach");
+                exit();
+            }
+            terms[avail].coef=coefficient;
+            terms[avail].expon=expon;
+        }
+    }
+}
