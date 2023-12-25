@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a variable to store the number
+    int number;
+
+    // Get input from the user
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    // Check the condition and print the result
+    if (number > 0) {
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+
+    // Return 0 to indicate successful execution
+    return 0;
+}
