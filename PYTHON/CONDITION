@@ -1,0 +1,10 @@
+# Get input from the user
+number = float(input("Enter a number: "))
+
+# Check the condition and print the result
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
