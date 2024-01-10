@@ -33,3 +33,15 @@ out = (out+1)%bufsize;
 break;
 } } 
 }
+out put
+1. Produce 2. Consume 3. Exit 
+Enter your choice: 2
+Buffer is Empty
+1. Produce 2. Consume 3. Exit 
+Enter your choice: 1
+Enter the value: 100
+1. Produce 2. Consume 3. Exit 
+Enter your choice: 2
+The consumed value is 100
+1. Produce 2. Consume 3. Exit 
+Enter your choice: 3
