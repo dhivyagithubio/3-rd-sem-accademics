@@ -40,4 +40,11 @@ printf("\n\tPROCESS\t BURST TIME \t WAITING TIME\tTURNAROUND TIME\n");
 for(i=0;i<n;i++)
 printf("\t%d \t %d \t\t %d \t\t %d \n",i+1,ct[i],wa[i],tat[i]); 
 getch();}
+out put
+PROCESS BURST TIME WAITING TIME TURNAROUNDTIME 
+1 24 6 30
+2 3 4 7
+3 3 7 10
+The Average Turnaround time is – 15.666667 The 
+Average Waiting time is------------ 5.666667
 
