@@ -24,6 +24,19 @@ temp=p[i];
 p[i]=p[k]; 
 p[k]=temp;
 }
+out put
+PROCESS BURST 
+TIME
+WAITING 
+TIME
+TURNARO 
+UND TIME
+P3 3 0 3
+P0 6 3 9
+P2 7 9 16
+P1 8 16 24
+Average Waiting Time -- 7.000000
+Average Turnaround Time -- 13.000000
 wt[0] = wtavg = 0;
 tat[0] = tatavg = bt[0]; for(i=1;i<n;i++)
 {
