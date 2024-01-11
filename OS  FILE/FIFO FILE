@@ -53,3 +53,15 @@ int main() {
 
     return 0;
 }
+out put
+1. produce 2. consume 3.exit 
+enter your choice:1
+enter the value:100
+1. produce 2. consume 3.exit 
+enter your choice:2
+enter the value:34
+1. produce 2. consume 3.exit 
+enter your choice:3
+
+
+
